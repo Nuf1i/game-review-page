@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+  tailwind.config = {
+    theme:{
+      extend: {
+        colors:{
+          'Button' : '#101010',
+          'Main' : '#FEFEFE',
+          'Orange' : '#F3891F',
+          'SideBar' : 'F0F0F0',
+        },
+      },
+    },
+  };
+  </script>
+</head>
+<body class="overflow-x-hidden bg-Main">
+  <div class="flex md:flex-nowrap mt-5 ml-24">
+
+    <!-- Main -->
+    <div class="w-full">
+
+      <!-- Navbar -->
+      <nav class="flex w-full justify-between">
+
+        <div class="">
+          <img class="h-[45px] w-[45px]" src="./imgg/logo2.png" alt="">
+        </div>
+
+        <div class="flex justify-end items-center px-14 space-x-14 grow font-bold text-[1.2rem]">
+          <div class="">
+            <a class="text-Orange" href="#">Home</a>
+          </div>
+          <div class="">
+            <a href="#">Store</a>
+          </div>
+          <div class="">
+            <a href="#">Blog</a>
+          </div>
+          <div class="">
+            <a href="#">Gallery</a>
+          </div>
+          <div class="">
+            <a href="#">Reviews</a>
+          </div>
+        </div>
+
+      </nav>
+
+      <!-- Welcome -->
+      <div class="w-full mt-16 flex justify-between space-x-14 border-b-2">
+
+        <div class="space-y-12 ">
+          <h1 class="font-bold text-4xl relative">Pre-order<br> Assaissin Creed 2025 <br>Now
+            <span class="border-t-[6px] border-Orange w-12 absolute -top-5 left-0"></span>
+          </h1>
+
+          <div class="w-64 p-2 flex justify-between items-center bg-Main rounded-xl drop-shadow-xl">
+            <div class="px-5">
+              <span class="font-bold text-black">155$</span>
+            </div>
+            <button class="px-4 py-2 bg-Button text-white rounded-xl hover:bg-Orange font-bold"type="button" name="button">Pro-order</button>
+          </div>
+        </div>
+
+        <div class="px-14">
+          <img class="h-[300px] w-[500px] rounded-xl bg-center bg-cover" src="./imgg/game-0.jpg" alt="">
+        </div>
+
+      </div>
+
+      <!-- Games -->
+      <div class="w-full flex flex-col mt-4">
+
+        <div class="w-full flex justify-between">
+
+          <div class="">
+            <h1 class="font-bold text-2xl" >Lastest Analyses</h1>
+          </div>
+
+          <div class="flex space-x-3 items-center px-6">
+            <div class="bg-Button px-4 h-2 rounded-xl">
+
+            </div>
+            <div class="bg-Button px-4 h-2 rounded-xl bg-gray-300">
+
+            </div>
+            <div class="bg-Button px-4 h-2 rounded-xl bg-gray-300">
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-3 flex space-x-6">
+
+          <div class="flex flex-col space-y-3 bg-gray-100 p-2 rounded-xl">
+            <div class="relative drop-shadow-2xl">
+
+              <img class="w-full h-[160px] rounded-xl" src="./imgg/game-1.jpg" alt="">
+
+              <span class="absolute grid place-items-center -bottom-5 right-6 h-12 w-12 text-white bg-gray-100/60 rounded-xl">
+                <h2 class="font-bold">9.5</h2>
+              </span>
+            </div>
+
+            <div class="px-2">
+              <h1 class="font-bold text-black" >Tomb Rider</h1>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col space-y-3 bg-gray-100 p-2 rounded-xl">
+            <div class="relative drop-shadow-2xl">
+
+              <img class="w-full h-[160px] rounded-xl" src="./imgg/game-2.jpg" alt="">
+
+              <span class="absolute grid place-items-center -bottom-5 right-6 h-12 w-12 text-white bg-gray-100/60 rounded-xl">
+                <h2 class="font-bold">7.5</h2>
+              </span>
+            </div>
+
+            <div class="px-2">
+              <h1 class="font-bold text-black" >Black Ops Cold War</h1>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col space-y-3 bg-gray-100 p-2 rounded-xl">
+            <div class="relative drop-shadow-2xl">
+
+              <img class="w-full h-[160px] rounded-xl" src="./imgg/game-3.jpg" alt="">
+
+              <span class="absolute grid place-items-center -bottom-5 right-6 h-12 w-12 text-white bg-gray-100/60 rounded-xl">
+                <h2 class="font-bold">8.5</h2>
+              </span>
+            </div>
+
+            <div class="px-2">
+              <h1 class="font-bold text-black" >Watch Dogs</h1>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SideBar -->
+    <div class="w-1/3 flex flex-col">
+      <!-- Search Bar -->
+      <div class="p-2 w-10 bg-gray-100 grid place-items-center rounded-lg">
+        <ion-icon class="text-black" name="search-outline"></ion-icon>
+      </div>
+
+      <!-- Recent News -->
+      <div class="flex flex-col">
+
+        <div class="flex items-center mt-5">
+          <div class="h-9 p-1 bg-Orange rounded-tr-lg rounded-br-lg"></div>
+          <h1 class="ml-2 text-lg text-black font-bold">Recent news</h1>
+          <div class="ml-auto flex space-x-1 px-2">
+            <span class="p-1 rounded-full bg-gray-600"></span>
+            <span class="p-1 rounded-full bg-gray-600"></span>
+            <span class="p-1 rounded-full bg-gray-600"></span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Games -->
+      <div class="flex flex-col space-y-8">
+        <!-- Card -->
+        <div class="flex py-3 mt-4 bg-gray-100 w-11/12 rounded-tr-xl rounded-br-xl justify-around">
+          <!-- Header -->
+          <div class="flex flex-col -mx-6">
+            <div class="border-b-4 gird place-items-center border-black w-5 mb-1 p-3">
+            </div>
+            <div>
+              <p class="text-black text-base font-bold">Star wars 2044
+              <Br> unless eventin
+              <Br> May 24
+              </p>
+            </div>
+            <div class="mt-2">
+              <p class="text-gray-400 text-xs font-bold">
+                05.12.2022
+              </p>
+            </div>
+              </div>
+
+          <!-- Image -->
+          <div class="w-1/3 rounded-xl -mx-10">
+            <img  class="h-full rounded-xl" src="./imgg/game-4.jpg" alt="">
+          </div>
+
+        </div>
+        <div class="flex py-3 mt-4 bg-gray-100 w-11/12 rounded-tr-xl rounded-br-xl justify-around">
+          <!-- Header -->
+          <div class="flex flex-col -mx-6">
+            <div class="border-b-4 gird place-items-center border-black w-5 mb-1 p-3">
+            </div>
+            <div>
+              <p class="text-black text-base font-bold">Star wars 2044
+              <Br> unless eventin
+              <Br> May 24
+              </p>
+            </div>
+            <div class="mt-2">
+              <p class="text-gray-400 text-xs font-bold">
+                05.12.2022
+              </p>
+            </div>
+              </div>
+
+          <!-- Image -->
+          <div class="w-1/3 rounded-xl -mx-10">
+            <img  class="h-full object-fit rounded-xl" src="./imgg/game-5.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Top Game -->
+      <div class="flex flex-col">
+
+        <div class="flex items-center mt-5">
+          <div class="h-9 p-1 bg-Orange rounded-tr-lg rounded-br-lg"></div>
+          <h1 class="ml-2 text-lg text-black font-bold">Top Games</h1>
+          <div class="ml-auto flex space-x-1 px-2">
+            <span class="p-1 rounded-full bg-gray-600"></span>
+            <span class="p-1 rounded-full bg-gray-600"></span>
+            <span class="p-1 rounded-full bg-gray-600"></span>
+          </div>
+        </div>
+
+        <div class="flex flex-col mt-2 px-5 space-y-2 text-black">
+          <p class="font-bold">1. The Last Of Us</p>
+          <p>2. Apex Legends</p>
+          <p>3. Assaissin Cred Valhalla</p>
+          <p>4. Mortal Combat</p>
+          <p>5. Cod Of War</p>
+          <p>6. Watch Dogs</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
